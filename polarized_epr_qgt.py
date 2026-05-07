@@ -29,7 +29,7 @@ def excited_state(theta):
     ], dtype=complex)
 
 # =========================
-# ESR intensity
+# EPR intensity
 # =========================
 
 def transition_intensity(theta):
@@ -106,7 +106,7 @@ legend_opts = dict(fontsize=8, frameon=False)
 
 plt.figure(figsize=(12, 9))
 
-# ESR intensity
+# EPR intensity
 plt.subplot(2,2,1)
 plt.plot(theta_vals, I_plus_list, label="I+", linewidth=1.5)
 plt.plot(theta_vals, I_minus_list, label="I-", linewidth=1.5)
@@ -116,7 +116,7 @@ plt.xticks(
     [r"$0$", r"$\pi/2$", r"$\pi$", r"$3\pi/2$", r"$2\pi$"]
 )
 
-plt.title("ESR Intensities (Correct θ dependence)", **title_opts)
+plt.title("EPR Intensities (Correct θ dependence)", **title_opts)
 plt.xlabel("θ (rad)", **label_opts)
 plt.ylabel("Intensity (arb. units)", **label_opts)
 plt.legend(loc="best", **legend_opts)
